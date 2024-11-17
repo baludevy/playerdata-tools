@@ -46,12 +46,12 @@ def swap() -> None:
     """
     if os.path.exists(source_player_data) is not True:
         print(
-            f"Source playerdata doesn't exist! Username: {args.source_player}; UUID: {generate_name_uuid(source_player_name)}"
+            f"Source playerdata doesn't exist! Username: {source_player_name}; UUID: {generate_name_uuid(source_player_name)}"
         )
         return
     if os.path.exists(target_player_data) is not True:
         print(
-            f"Target playerdata doesn't exist! Username: {args.target_player}; UUID: {generate_name_uuid(target_player_name)}"
+            f"Target playerdata doesn't exist! Username: {target_player_name}; UUID: {generate_name_uuid(target_player_name)}"
         )
         return
     # Rename the two files temporarily so that their names dont collide when swapping the two filenames
